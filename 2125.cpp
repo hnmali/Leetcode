@@ -9,11 +9,11 @@ public:
                 if (bank[i][j] == '1')
                     temp++;
             }
-        if (temp)
-            lasers.push_back(temp);
+            if (temp)
+                lasers.push_back(temp);
         }
-        for (int i = 0; !lasers.empty() && i < lasers.size()-1; i++)
-            ans = ans + (lasers[i]*lasers[i+1]);
+        for (int i = 0; !lasers.empty() && i < lasers.size() - 1; i++)
+            ans = ans + (lasers[i] * lasers[i + 1]);
         return ans;
     }
 };
